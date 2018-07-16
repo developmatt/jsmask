@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/matheusasdev/jsmask.svg?branch=master)](https://travis-ci.org/matheusasdev/jsmask)
+
 # JS Mask
 ## A simple lightweight Javascript mask
 
