@@ -1,1 +1,15 @@
-/node_modules
+# Installed npm modules
+node_modules
+package-lock.json
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes

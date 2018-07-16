@@ -11,7 +11,7 @@ JSMask only requires you send two parameters:
 1. The element who needs a mask
 2. The mask format (in wich the X represents the characters)
 
-Example: 
+Example:
 
     <input type="text" id="anyId" oninput="jsmask(this, XXX-XXX/XXX)">
 
@@ -36,9 +36,9 @@ The result will be **12-34-56**
 
 #### Installing from github
 
-- Clone jsmask (git@github.com:matheusasdev/jsmask.git) inside your project
+- Clone jsmask `git@github.com:matheusasdev/jsmask.git` inside your project
 - In your script file, import jsmask
-Example: 
+Example:
 `require('../jsmask/dist/jsmask.min.js');`
 
 Obs: If you are using any code packer (as webpack), you can just include the jsmask this way: `require('jsmask');`
@@ -46,3 +46,7 @@ Obs: If you are using any code packer (as webpack), you can just include the jsm
 
 #### Installing from NPM
 **Coming soon**
+
+
+### Contributing
+
