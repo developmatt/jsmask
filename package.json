@@ -4,7 +4,9 @@
   "description": "The simplest form input mask based on Javascript",
   "main": "dist/jsmask.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development -w",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/matheusasdev/jsmask/issues"
   },
-  "homepage": "https://github.com/matheusasdev/jsmask#readme"
+  "homepage": "https://github.com/matheusasdev/jsmask#readme",
+  "devDependencies": {
+    "webpack": "^4.16.1"
+  }
 }
