@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/matheusasdev/jsmask.svg?branch=master)](https://travis-ci.org/matheusasdev/jsmask)
+
 # JS Mask
 ## A simple lightweight Javascript mask
 
@@ -45,4 +47,6 @@ Obs: If you are using any code packer (as webpack), you can just include the jsm
 #### Installing from NPM
 **Coming soon**
 
+
 ### Contributing
+
