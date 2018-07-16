@@ -1,0 +1,29 @@
+{
+  "name": "jsmask-plugin",
+  "version": "1.0.0",
+  "description": "The simplest form input mask based on Javascript",
+  "main": "dist/jsmask.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusasdev/jsmask.git"
+  },
+  "keywords": [
+    "mask",
+    "javascript",
+    "input",
+    "form"
+  ],
+  "author": {
+    "name": "Matheus Godoi",
+    "email": "matheusasdev@gmail.com",
+    "url": "https://mattdevstudio.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheusasdev/jsmask/issues"
+  },
+  "homepage": "https://github.com/matheusasdev/jsmask#readme"
+}
