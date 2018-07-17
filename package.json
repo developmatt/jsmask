@@ -4,7 +4,7 @@
   "description": "The simplest form input mask based on Javascript",
   "main": "dist/jsmask.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "webpack --mode production",
     "dev": "webpack --mode development -w",
     "build": "webpack --mode production"
   },
