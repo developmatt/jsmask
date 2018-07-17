@@ -8,3 +8,6 @@ directories:
 before_script:
 - 'npm install'
 - 'npm run build'
+
+after_success:
+- echo "Test Success"
