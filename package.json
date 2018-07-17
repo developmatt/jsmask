@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/matheusasdev/jsmask#readme",
   "devDependencies": {
-    "webpack": "^4.16.1"
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8"
   }
 }
