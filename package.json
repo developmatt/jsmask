@@ -1,5 +1,5 @@
 {
-  "name": "jsmask-plugin",
+  "name": "jsmask",
   "version": "1.0.4",
   "description": "The simplest form input mask based on Javascript",
   "main": "dist/jsmask.min.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/developmatt/jsmask.git"
+    "url": "git+https://github.com/developmatt/jsmask-plugin.git"
   },
   "keywords": [
     "mask",
@@ -25,9 +25,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/developmatt/jsmask/issues"
+    "url": "https://github.com/developmatt/jsmask-plugin/issues"
   },
-  "homepage": "https://github.com/developmatt/jsmask#readme",
+  "homepage": "https://github.com/developmatt/jsmask-plugin#readme",
   "devDependencies": {
     "webpack": "^4.16.1",
     "webpack-cli": "^3.0.8"
