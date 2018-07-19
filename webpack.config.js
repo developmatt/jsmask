@@ -4,7 +4,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = [
 	{
 		mode: 'development',
-		entry: './src.js',
+		entry: './src/main.js',
 		output: {
 			path: path.resolve(__dirname, 'dist'),
 			filename: 'jsmask.min.js'
@@ -12,7 +12,7 @@ module.exports = [
 	},
 	{
 		mode: 'production',
-		entry: './src.js',
+		entry: './src/main.js',
 		output: {
 			path: path.resolve(__dirname, 'dist'),
 			filename: 'jsmask.min.js'
