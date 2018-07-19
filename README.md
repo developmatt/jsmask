@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/matheusasdev/jsmask.svg?branch=master)](https://travis-ci.org/matheusasdev/jsmask)
+[![Build Status](https://travis-ci.org/developmatt/jsmask.svg?branch=master)](https://travis-ci.org/developmatt/jsmask)
 
 # JS Mask
 ## A simple lightweight Javascript mask
@@ -21,7 +21,7 @@ Another way to do this is:
 
 In view file:
 
-    <input type="text" id="anyId" oninput="jsmask(this, XXX-XXX/XXX)">
+    <input type="text" id="anyId">
 
 In your script file:
 
@@ -36,7 +36,7 @@ The result will be **12-34-56**
 
 #### Installing from github
 
-- Clone jsmask `git@github.com:matheusasdev/jsmask.git` inside your project
+- Clone jsmask `git@github.com:developmatt/jsmask.git` inside your project
 - In your script file, import jsmask
 Example:
 `require('../jsmask/dist/jsmask.min.js');`
