@@ -1,4 +1,4 @@
-![Build Status](https://img.shields.io/travis/developmatt/jsmask/master.svg?longCache=true&style=for-the-badge)
+![Build Status](https://img.shields.io/travis/developmatt/jsmask-plugin/master.svg?longCache=true&style=for-the-badge)
 ![License: MIT](https://img.shields.io/badge/license-mit-blue.svg?longCache=true&style=for-the-badge)
 
 
@@ -42,24 +42,24 @@ The result will be **12-34-56**
 
 #### Installing from github
 
-- Clone jsmask `git@github.com:developmatt/jsmask.git` inside your project
+- Clone jsmask `git@github.com:developmatt/jsmask-plugin.git` inside your project
 - In your script file, import jsmask
 Example:
 `require('./jsmask-plugin/dist/jsmask.min.js');`
 
-Obs: If you are using any code packer (as webpack), you can just include the jsmask this way: `require('jsmask-plugin');`
+Obs: If you are using any code packer (as webpack), you can just include the jsmask this way: `require('jsmask');`
 
 
 #### Installing from NPM 
 
-    npm install jsmask-plugin
+    npm install jsmask
 or
 
-    npm install developmatt/jsmask
+    npm install developmatt/jsmask-plugin
 
 Now, in your script file, just include the jsmask using (I'm assuming you're using some code packer):
 
-    require('jsmask-plugin');
+    require('jsmask');
 
 ### Contributing
-You are welcome to contribute. If you want more info about contributing, [read this](https://github.com/developmatt/jsmask/blob/master/CONTRIBUTING.md).
+You are welcome to contribute. If you want more info about contributing, [read this](https://github.com/developmatt/jsmask-plugin/blob/master/CONTRIBUTING.md).
