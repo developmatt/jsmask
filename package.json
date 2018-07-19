@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matheusasdev/jsmask.git"
+    "url": "git+https://github.com/developmatt/jsmask.git"
   },
   "keywords": [
     "mask",
@@ -20,14 +20,14 @@
   ],
   "author": {
     "name": "Matheus Godoi",
-    "email": "matheusasdev@gmail.com",
-    "url": "https://mattdevstudio.com"
+    "email": "hi.developmatt@gmail.com",
+    "url": "https://developmatt.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matheusasdev/jsmask/issues"
+    "url": "https://github.com/developmatt/jsmask/issues"
   },
-  "homepage": "https://github.com/matheusasdev/jsmask#readme",
+  "homepage": "https://github.com/developmatt/jsmask#readme",
   "devDependencies": {
     "webpack": "^4.16.1",
     "webpack-cli": "^3.0.8"
