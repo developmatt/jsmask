@@ -39,13 +39,14 @@ The result will be **12-34-56**
 - Clone jsmask `git@github.com:developmatt/jsmask.git` inside your project
 - In your script file, import jsmask
 Example:
-`require('../jsmask/dist/jsmask.min.js');`
+`require('./jsmask-plugin/dist/jsmask.min.js');`
 
-Obs: If you are using any code packer (as webpack), you can just include the jsmask this way: `require('jsmask');`
+Obs: If you are using any code packer (as webpack), you can just include the jsmask this way: `require('jsmask-plugin');`
 
 
-#### Installing from NPM
-**Coming soon**
+#### Installing from NPM 
+
+    npm install jsmask-plugin
 
 
 ### Contributing
