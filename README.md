@@ -1,9 +1,13 @@
-[![Build Status](https://travis-ci.org/developmatt/jsmask.svg?branch=master)](https://travis-ci.org/developmatt/jsmask)
+![Build Status](https://img.shields.io/travis/developmatt/jsmask/master.svg?longCache=true&style=for-the-badge)
+![License: MIT](https://img.shields.io/badge/license-mit-blue.svg?longCache=true&style=for-the-badge)
+
+
 
 # JS Mask
 ## A simple lightweight Javascript mask
 
 This module allows you create masks to input (for phones, zip codes and etc) in simple steps.
+**This plugin does not require jquery.**
 
 ### How it works
 
@@ -11,13 +15,16 @@ JSMask only requires you send two parameters:
 1. The element who needs a mask
 2. The mask format (in wich the X represents the characters)
 
-Example:
+Examples:
+
+**Calling from HTML**
 
     <input type="text" id="anyId" oninput="jsmask(this, XXX-XXX/XXX)">
 
 The result will be: **123-456/789**
 
-Another way to do this is:
+
+**Using Javascript**
 
 In view file:
 
@@ -30,7 +37,6 @@ In your script file:
     });
 
 The result will be **12-34-56**
-
 
 ### Installing in project
 
@@ -47,7 +53,13 @@ Obs: If you are using any code packer (as webpack), you can just include the jsm
 #### Installing from NPM 
 
     npm install jsmask-plugin
+or
 
+    npm install developmatt/jsmask
+
+Now, in your script file, just include the jsmask using (I'm assuming you're using some code packer):
+
+    require('jsmask-plugin');
 
 ### Contributing
-
+You are welcome to contribute. If you want more info about contributing, [read this](https://github.com/developmatt/jsmask/blob/master/CONTRIBUTING.md).
