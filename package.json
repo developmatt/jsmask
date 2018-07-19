@@ -1,6 +1,6 @@
 {
   "name": "jsmask-plugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The simplest form input mask based on Javascript",
   "main": "dist/jsmask.min.js",
   "scripts": {
