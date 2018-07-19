@@ -1,40 +1,38 @@
 var jsmask = function (el, mask, options){
-	let ret = '';
-	var sc = "./\-|\\() _";
-	let st = String(el.value);
+	let valueToReturn = '';
+	const maskCharacters = "./\-|\\() _";
+	let elementValue = String(el.value);
+	let charactersBlocked;
 
-	
-	let ad;
 	if(typeof options != 'undefined' && typeof options.type != 'undefined'){
 		let type = typeof options.type;
 		switch(typeof options.type){
 			case 'number' :
-				ad = /[A-Za-z]/g;
+				charactersBlocked = /[A-Za-z]/g;
 				break;
 
 			case 'string' :
-				ad = /[0-9]/g;
+				charactersBlocked = /[0-9]/g;
 				break;
 
 			default :
-				ad = /[^]/;
+				charactersBlocked = /[^]/;
 				break;
 		}
-		st = st.replace(ad, '');
+		elementValue = elementValue.replace(charactersBlocked, '');
 	}
 
-	for(let i = 0; i < st.length; i++){
-		if(sc.indexOf(mask.charAt(i)) != -1){
-			if(st.charAt(i) != mask.charAt(i)){
-				ret += mask.charAt(i) + st.charAt(i);
+	for(let i = 0; i < elementValue.length; i++){
+		if(maskCharacters.indexOf(mask.charAt(i)) != -1){
+			if(elementValue.charAt(i) != mask.charAt(i)){
+				valueToReturn += mask.charAt(i) + elementValue.charAt(i);
 			}else{
-				ret += st.charAt(i);
+				valueToReturn += elementValue.charAt(i);
 			}
 		}else{
-			ret += st.charAt(i);
+			valueToReturn += elementValue.charAt(i);
 		}
 	}
-	el.value = ret.slice(0, mask.length);
+	el.value = valueToReturn.slice(0, mask.length);
 }
-
 window.jsmask = jsmask;
