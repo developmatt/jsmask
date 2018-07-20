@@ -62,7 +62,7 @@ Now, in your script file, just include the jsmask using (I'm assuming you're usi
 
     require('jsmask');
 
-#### Other mask options
+### Other mask options
 JSmask offers options more accurate to mask your fiels. You can use the chars 'A', 'a', '0', 'U', 'l' instead 'X'. Se each option definition:
  - 'A': Just uppercase letters
  - 'a': Just lowercase letters
