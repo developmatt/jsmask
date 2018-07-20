@@ -1,3 +1,4 @@
+
 ![Build Status](https://img.shields.io/travis/developmatt/jsmask-plugin/master.svg?longCache=true&style=for-the-badge)
 ![License: MIT](https://img.shields.io/badge/license-mit-blue.svg?longCache=true&style=for-the-badge)
 
@@ -60,6 +61,21 @@ or
 Now, in your script file, just include the jsmask using (I'm assuming you're using some code packer):
 
     require('jsmask');
+
+#### Other mask options
+JSmask offers options more accurate to mask your fiels. You can use the chars 'A', 'a', '0', 'U', 'l' instead 'X'. Se each option definition:
+ - 'A': Just uppercase letters
+ - 'a': Just lowercase letters
+ - '0': Just numbers
+ - 'U': Uppercase letters or numbers
+ - 'l': Lowercase letters or numbers
+ - 'X': Uppercase or lowercase letters or numbers
+
+Example: 
+
+    <input id="anyId" oninput="jsmask(this, 'AAA-aaa-000-UUU-lll')">
+
+The result will be **ABC-def-123-GH4-ij5**
 
 ### Contributing
 You are welcome to contribute. If you want more info about contributing, [read this](https://github.com/developmatt/jsmask-plugin/blob/master/CONTRIBUTING.md).
