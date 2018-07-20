@@ -1,36 +1,50 @@
 var jsmask = function (el, mask, options){
+	const maskCharacters = "./\-|\\() _\*";
 	let valueToReturn = '';
-	const maskCharacters = "./\-|\\() _";
 	let elementValue = String(el.value);
 	let charactersBlocked;
+	let nextCharacter;
 
-	if(typeof options != 'undefined' && typeof options.type != 'undefined'){
-		let type = typeof options.type;
-		switch(typeof options.type){
-			case 'number' :
-				charactersBlocked = /[A-Za-z]/g;
+	for(let i = 0; i < elementValue.length; i++){
+		switch (mask.charAt(i)) {
+			case 'A' :
+				charactersBlocked = /[^A-Z]/g;
 				break;
 
-			case 'string' :
-				charactersBlocked = /[0-9]/g;
+			case 'a' :
+				charactersBlocked = /[^a-z]/g;
+				break;
+
+			case '0' :
+				charactersBlocked = /[^0-9]/g;
+				break;
+
+			case 'X' :
+				charactersBlocked = /[^A-Za-z0-9]/g;
+				break;
+
+			case 'U' :
+				charactersBlocked = /[^A-Z0-9]/g;
+				break;
+
+			case 'l' :
+				charactersBlocked = /[^a-z0-9]/g;
 				break;
 
 			default :
-				charactersBlocked = /[^]/;
+				charactersBlocked = /[A-Za-z0-9]/g; 
 				break;
 		}
-		elementValue = elementValue.replace(charactersBlocked, '');
-	}
 
-	for(let i = 0; i < elementValue.length; i++){
+		nextCharacter = elementValue.charAt(i).replace(charactersBlocked, '');
 		if(maskCharacters.indexOf(mask.charAt(i)) != -1){
 			if(elementValue.charAt(i) != mask.charAt(i)){
-				valueToReturn += mask.charAt(i) + elementValue.charAt(i);
+				valueToReturn += mask.charAt(i) + nextCharacter;
 			}else{
-				valueToReturn += elementValue.charAt(i);
+				valueToReturn += nextCharacter;
 			}
 		}else{
-			valueToReturn += elementValue.charAt(i);
+			valueToReturn += nextCharacter;
 		}
 	}
 	el.value = valueToReturn.slice(0, mask.length);
